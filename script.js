@@ -14,6 +14,15 @@ $(document).ready(function(){
             $('.scroll-up-btn').removeClass("show");
         }
     });
+    $(".animated-progress span").each(function () {
+        $(this).animate(
+          {
+            width: $(this).attr("data-progress") + "%",
+          },
+          1000
+        );
+        $(this).text($(this).attr("data-progress") + "%");
+      });
 
     // slide-up script
     $('.scroll-up-btn').click(function(){
@@ -68,6 +77,8 @@ $(document).ready(function(){
                 items: 3,
                 nav: false
             }
+            
         }
+        
     });
 });

@@ -165,7 +165,7 @@ section .title::after{
 /* Accueil section styling */
 .Accueil{
     display: flex;
-    background: url("images/20210216_110548.jpg") no-repeat center;
+    background: url("images/rodion.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -300,7 +300,46 @@ section .title::after{
 }
 
 /* .compétence section styling */
+.Formation{
+    text-align: center;
+}
+.test {
+    display: flex;
+}
 
+.animated-progress {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 20px 10px;
+    border: 1px solid rgb(189, 113, 113);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .animated-progress span {
+    height: 100%;
+    display: block;
+    width: 0;
+    color: rgb(255, 251, 251);
+    line-height: 30px;
+    position: absolute;
+    text-align: end;
+    padding-right: 5px;
+  }
+  
+  .progress-blue span {
+    background-color: blue;
+  }
+  .progress-green span {
+    background-color: red;
+  }
+  .progress-purple span {
+    background-color: indigo;
+  }
+  .progress-red span {
+    background-color: red;
+  }
 
 .compétence .compétence-content .column{
     width: calc(50% - 30px);
@@ -329,6 +368,7 @@ section .title::after{
     color: crimson;
     background: none;
 }
+
 
 /* contact section styling */
 .contact .title::after{
@@ -566,4 +606,9 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+/* ======================================================================================== */
+i{
+    color:crimson;
 }
